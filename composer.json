@@ -1,0 +1,15 @@
+{
+    "name": "silverstripe-archive/silveerstripe-bbcodeparser",
+    "description": "Abandoned moduled providing BBCodeParser and TextParser to SS 4+",
+    "type": "silverstripe-module",
+    "require": {
+        "silverstripe/framework": "^4.0"
+    },
+    "license": "BSD-3-Clause",
+    "authors": [
+        {
+            "name": "Sam Minnee",
+            "email": "sam@silverstripe.com"
+        }
+    ]
+}

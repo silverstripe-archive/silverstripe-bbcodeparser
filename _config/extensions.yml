@@ -1,0 +1,6 @@
+---
+name: extensions
+---
+DBText:
+  extensions:
+    - DBTextParserExtension
