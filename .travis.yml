@@ -25,7 +25,7 @@ before_script:
  - cd ~/builds/ss
 
 script:
-  - vendor/bin/phpunit "$COVERAGE" forum/tests
+  - vendor/bin/phpunit "$COVERAGE" bbcodeparser/tests
 
 after_success:
   - test "$COVERAGE" != "" && bash <(curl -s https://codecov.io/bash) -f ~/coverage.clover
