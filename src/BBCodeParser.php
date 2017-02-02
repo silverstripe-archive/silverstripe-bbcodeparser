@@ -22,7 +22,7 @@ class BBCodeParser extends TextParser {
 
 	/**
 	 * @config
-	 * @var Boolean Set whether similies :), :(, :P are converted to images
+	 * @var Boolean Set whether smilies :), :(, :P are converted to images
 	 */
 	private static $allow_smilies = false;
 
