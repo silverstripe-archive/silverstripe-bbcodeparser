@@ -25,4 +25,4 @@ before_script:
  - cd ~/builds/ss
 
 script:
-  - vendor/bin/phpunit bbcodeparser/tests
+  - vendor/bin/phpunit silverstripe-bbcodeparser/tests
