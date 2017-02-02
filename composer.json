@@ -16,5 +16,8 @@
         "psr-4" : {
             "SilverStripe\\View\\Parser\\": "src/"
         }
-    }
+    },
+    "include-path": [
+        "thirdparty/"
+    ]
 }
