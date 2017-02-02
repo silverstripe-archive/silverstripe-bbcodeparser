@@ -24,7 +24,7 @@ class BBCodeParser extends TextParser {
 	 * @config
 	 * @var Boolean Set whether similies :), :(, :P are converted to images
 	 */
-	private static $allow_similies = false;
+	private static $allow_smilies = false;
 
 	/**
 	 * Set the location of the smiles folder. By default use the ones in framework
