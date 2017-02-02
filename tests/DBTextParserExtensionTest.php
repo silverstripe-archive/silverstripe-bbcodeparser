@@ -2,12 +2,18 @@
 
 use SilverStripe\ORM\FieldType\DBField;
 use SilverStripe\Dev\SapphireTest;
+use SilverStripe\ORM\FieldType\DBHTMLText;
+use SilverStripe\View\Parsers\BBCodeParser;
 
 /**
- * @package framework
+ * @package bbcodeparser
  * @subpackage tests
  */
 class DBHTMLTextTest extends SapphireTest {
+
+    /**
+     * @covers {@link BBCodeParser}
+     */
 	public function testParse() {
 		// Test parse
 		/** @var DBHTMLText $obj */
@@ -19,7 +25,7 @@ class DBHTMLTextTest extends SapphireTest {
 		// BBCode strips HTML and applies own formatting
 		$this->assertEquals(
 			'<strong>Some content</strong> shortcode content with shortcode',
-			$obj->Parse('SilverStripe\\View\\Parsers\\BBCodeParser')->forTemplate()
+			$obj->Parse(BBCodeParser::class)->forTemplate()
 		);
 	}
 }
