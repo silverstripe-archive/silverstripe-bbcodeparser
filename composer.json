@@ -1,5 +1,5 @@
 {
-    "name": "silverstripe-archive/silveerstripe-bbcodeparser",
+    "name": "silverstripe-archive/silverstripe-bbcodeparser",
     "description": "Abandoned moduled providing BBCodeParser and TextParser to SS 4+",
     "type": "silverstripe-module",
     "require": {
