@@ -55,7 +55,7 @@ class DBHTMLTextTest extends SapphireTest
     /**
      * @return string
      */
-    public function DummyShortCode()
+    public static function DummyShortCode()
     {
         return 'shortcode content';
     }
