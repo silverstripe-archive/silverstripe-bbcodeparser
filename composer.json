@@ -1,5 +1,5 @@
 {
-    "name": "silverstripe-archive/silveerstripe-bbcodeparser",
+    "name": "silverstripe-archive/silverstripe-bbcodeparser",
     "description": "Abandoned moduled providing BBCodeParser and TextParser to SS 4+",
     "type": "silverstripe-module",
     "require": {
@@ -11,5 +11,13 @@
             "name": "Sam Minnee",
             "email": "sam@silverstripe.com"
         }
+    ],
+    "autoload": {
+        "psr-4" : {
+            "SilverStripe\\View\\Parser\\": "src/"
+        }
+    },
+    "include-path": [
+        "thirdparty/HTML_BBCodeParser2/"
     ]
 }

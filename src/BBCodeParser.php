@@ -22,9 +22,9 @@ class BBCodeParser extends TextParser {
 
 	/**
 	 * @config
-	 * @var Boolean Set whether similies :), :(, :P are converted to images
+	 * @var Boolean Set whether smilies :), :(, :P are converted to images
 	 */
-	private static $allow_similies = false;
+	private static $allow_smilies = false;
 
 	/**
 	 * Set the location of the smiles folder. By default use the ones in framework
@@ -126,7 +126,7 @@ class BBCodeParser extends TextParser {
 		$config = parse_ini_file('BBCodeParser.ini', true);
 		$options = $config['SSHTMLBBCodeParser'];
 
-		require_once(__DIR__ . '/../thirdparty/HTML_BBCodeParser2/BBCodeParser2.php');
+		require_once(__DIR__ . '/../thirdparty/HTML_BBCodeParser2/HTML/BBCodeParser2.php');
 
 		$p = new HTML_BBCodeParser2($options);
 		$this->content = $p->qparse($this->content);
