@@ -24,5 +24,10 @@
     },
     "include-path": [
         "thirdparty/HTML_BBCodeParser2/"
-    ]
+    ],
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
 }
