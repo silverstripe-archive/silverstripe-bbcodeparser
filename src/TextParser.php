@@ -1,6 +1,6 @@
 <?php
 
-namespace SilverStripe\View\Parsers;
+namespace SilverStripe\BBCodeParser;
 
 use SilverStripe\ORM\FieldType\DBField;
 use SilverStripe\Core\Object;

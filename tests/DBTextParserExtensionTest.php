@@ -1,9 +1,11 @@
 <?php
 
+namespace SilverStripe\BBCodeParser\Tests;
+
 use SilverStripe\Dev\SapphireTest;
 use SilverStripe\ORM\FieldType\DBField;
 use SilverStripe\ORM\FieldType\DBHTMLText;
-use SilverStripe\View\Parsers\BBCodeParser;
+use SilverStripe\BBCodeParser\BBCodeParser;
 use SilverStripe\View\Parsers\ShortcodeParser;
 
 /**

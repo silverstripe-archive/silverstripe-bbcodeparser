@@ -14,7 +14,12 @@
     ],
     "autoload": {
         "psr-4" : {
-            "SilverStripe\\View\\Parser\\": "src/"
+            "SilverStripe\\BBCodeParser\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "SilverStripe\\BBCodeParser\\Tests\\": "tests/"
         }
     },
     "include-path": [

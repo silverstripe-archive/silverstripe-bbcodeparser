@@ -1,6 +1,6 @@
 ---
 name: extensions
 ---
-DBText:
+SilverStripe\ORM\FieldType\DBText:
   extensions:
-    - DBTextParserExtension
+    - SilverStripe\BBCodeParser\DBTextParserExtension

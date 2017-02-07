@@ -1,8 +1,10 @@
 <?php
 
+namespace SilverStripe\BBCodeParser;
+
 use SilverStripe\Core\Extension;
 use SilverStripe\Core\Injector\Injector;
-use SilverStripe\View\Parsers\TextParser;
+use SilverStripe\BBCodeParser\TextParser;
 use SilverStripe\ORM\FieldType\DBField;
 
 class DBTextParserExtension extends Extension
@@ -22,7 +24,7 @@ class DBTextParserExtension extends Extension
         }
 
         /** @var TextParser $obj */
-        $obj = Injector::inst()->createWithArgs($parser, [$this->forTemplate()]);
+        $obj = Injector::inst()->createWithArgs($parser, [$this->owner->forTemplate()]);
         return $obj->parse();
     }
 }
