@@ -29,38 +29,41 @@ use SilverStripe\Core\Object;
  *
  * @todo Define a proper syntax for (or refactor) usable_tags that can be extended as needed.
  */
-abstract class TextParser extends Object {
+abstract class TextParser extends Object
+{
 
-	/**
-	 * @var string
-	 */
-	protected $content;
+    /**
+     * @var string
+     */
+    protected $content;
 
-	/**
-	 * Creates a new TextParser object.
-	 *
-	 * @param string $content The contents of the dbfield
-	 */
-	public function __construct($content = "") {
-		parent::__construct();
-		$this->content = $content;
-		parent::__construct();
-	}
+    /**
+     * Creates a new TextParser object.
+     *
+     * @param string $content The contents of the dbfield
+     */
+    public function __construct($content = "")
+    {
+        parent::__construct();
+        $this->content = $content;
+        parent::__construct();
+    }
 
-	/**
-	 * Convenience method, shouldn't really be used, but it's here if you want it
-	 *
-	 * @param string $content
-	 */
-	public function setContent($content = "") {
-		$this->content = $content;
-	}
+    /**
+     * Convenience method, shouldn't really be used, but it's here if you want it
+     *
+     * @param string $content
+     */
+    public function setContent($content = "")
+    {
+        $this->content = $content;
+    }
 
-	/**
-	 * Define your own parse method to parse $this->content appropriately.
-	 * See the class doc-block for more implementation details.
-	 *
-	 * @return DBField
-	 */
-	abstract public function parse();
+    /**
+     * Define your own parse method to parse $this->content appropriately.
+     * See the class doc-block for more implementation details.
+     *
+     * @return DBField
+     */
+    abstract public function parse();
 }
