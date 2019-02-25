@@ -3,7 +3,7 @@
 namespace SilverStripe\BBCodeParser;
 
 use SilverStripe\ORM\FieldType\DBField;
-use SilverStripe\Core\Object;
+use SilverStripe\Core\Injector\Injectable;
 
 /**
  * Parses text in a variety of ways.
@@ -29,8 +29,9 @@ use SilverStripe\Core\Object;
  *
  * @todo Define a proper syntax for (or refactor) usable_tags that can be extended as needed.
  */
-abstract class TextParser extends Object
+abstract class TextParser
 {
+    use Injectable;
 
     /**
      * @var string
@@ -44,9 +45,7 @@ abstract class TextParser extends Object
      */
     public function __construct($content = "")
     {
-        parent::__construct();
         $this->content = $content;
-        parent::__construct();
     }
 
     /**
